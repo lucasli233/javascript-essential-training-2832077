@@ -1,8 +1,9 @@
 const updateBackpack = (update) => {
-  let main = document.querySelector("main");
-  main.innerHTML = markup(backpack);
-  console.info(update);
-};
+  let main = document.querySelector("main")
+  // eslint-disable-next-line no-undef
+  main.innerHTML = markup(backpack)
+  console.info(update)
+}
 
 const backpack = {
   name: "Everyday Backpack",
@@ -15,14 +16,14 @@ const backpack = {
   },
   lidOpen: false,
   toggleLid: function (lidStatus) {
-    this.lidOpen = lidStatus;
-    updateBackpack(`Lid status changed.`);
+    this.lidOpen = lidStatus
+    updateBackpack(`Lid status changed.`)
   },
   newStrapLength: function (lengthLeft, lengthRight) {
-    this.strapLength.left = lengthLeft;
-    this.strapLength.right = lengthRight;
-    updateBackpack(`Strap lengths updated.`);
+    this.strapLength.left = lengthLeft
+    this.strapLength.right = lengthRight
+    updateBackpack(`Strap lengths updated.`)
   },
-};
+}
 
-export default backpack;
+export default backpack

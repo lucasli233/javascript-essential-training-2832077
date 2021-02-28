@@ -1,7 +1,7 @@
 /**
  * Create a Backpack object, populate some HTML to display its properties.
  */
-import backpack from "./backpack.js";
+import backpack from "./backpack.js"
 
 const markup = (backpack) => {
   return `
@@ -17,9 +17,9 @@ const markup = (backpack) => {
       <li>Top lid: ${backpack.lidOpen ? "Open" : "Closed"}</li>
     </ul>
   </div>
-`;
-};
+`
+}
 
-const main = document.createElement("main");
-main.innerHTML = markup(backpack);
-document.body.appendChild(main);
+const main = document.createElement("main")
+main.innerHTML = markup(backpack)
+document.body.appendChild(main)
