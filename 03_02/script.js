@@ -13,10 +13,10 @@ const backpack = {
   },
   lidOpen: false,
   toggleLid: function (lidStatus) {
-    this.lidOpen = lidStatus;
+    this.lidOpen = lidStatus
   },
   newStrapLength: function (lengthLeft, lengthRight) {
-    this.strapLength.left = lengthLeft;
-    this.strapLength.right = lengthRight;
+    this.strapLength.left = lengthLeft
+    this.strapLength.right = lengthRight
   },
-};
+}

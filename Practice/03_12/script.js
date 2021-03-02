@@ -6,3 +6,21 @@
  * - Create several objects using the class.
  * - Test the objecs by calling their properties and using their methods in the console.
  */
+
+import Vape from "./Vape.js"
+import Backpack from "./Backpack.js"
+
+const myVape = new Vape("black", 25, 4682, 0.6, "na", "na", "cosmos", true)
+
+const myBackpack = new Backpack(
+  "Everyday Backpack",
+  30,
+  "grey",
+  15,
+  26,
+  26,
+  false
+)
+
+console.log(myVape)
+console.log(myBackpack)

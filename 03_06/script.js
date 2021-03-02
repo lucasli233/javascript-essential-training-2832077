@@ -13,12 +13,20 @@ const backpack = {
   },
   lidOpen: false,
   toggleLid: function (lidStatus) {
-    this.lidOpen = lidStatus;
+    this.lidOpen = lidStatus
   },
   newStrapLength: function (lengthLeft, lengthRight) {
-    this.strapLength.left = lengthLeft;
-    this.strapLength.right = lengthRight;
+    this.strapLength.left = lengthLeft
+    this.strapLength.right = lengthRight
   },
-};
+}
 
-console.log("The backpack object:", backpack);
+console.log("The backpack object:", backpack)
+console.log("The pocketNum value:", backpack.pocketNum)
+console.log("The pocketNum value:", backpack["pocketNum"])
+
+var query = "pocketNum"
+
+console.log("The pocketNum valur:", backpack[query])
+
+console.log("Left after:", backpack.strapLength.left)

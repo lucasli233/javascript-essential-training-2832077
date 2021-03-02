@@ -16,11 +16,25 @@ const backpack = {
     left: 26,
     right: 26,
   },
+  lidOpen: false,
+  editName: function (newName) {
+    this.name = newName
+  },
+  editVolume: function (newVolume) {
+    this.volume = newVolume
+  },
+  editColor: function (newColor) {
+    this.color = newColor
+  },
+  editPocketNum: function (newPocketNum) {
+    this.pocketNum = newPocketNum
+  },
+
   toggleLid: function (lidStatus) {
-    this.lidOpen = lidStatus;
+    this.lidOpen = lidStatus
   },
-  newStrapLength: function (lengthLeft, lengthRight) {
-    this.strapLength.left = lengthLeft;
-    this.strapLength.right = lengthRight;
+  editStrapLength: function (lengthLeft, lengthRight) {
+    this.strapLength.left = lengthLeft
+    this.strapLength.right = lengthRight
   },
-};
+}
